@@ -1,0 +1,208 @@
+@charset "utf-8";
+/**    Ye Basic Reset
+ * 
+ * @author       Brett Shenk
+ * @description  Simple Reset Based on Github
+ * @since        0.1.0
+ * @source       https://github.com/sindresorhus/github-markdown-css/blob/main/github-markdown.css
+ * @source       https://github.com/sindresorhus/github-markdown-css/blob/main/github-markdown-dark.css
+**/
+body {
+    max-width: 900px;
+    min-width: 200px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+/*  @group Frequent Use Items  */
+ol ol,
+ul ol {
+    list-style-type: lower-roman;
+}
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+    list-style-type: lower-alpha;
+}
+ul ul ul,
+ol ol ol,
+ul ul,
+ol ol {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+pre, code, kbd, samp {
+    list-style: none!important;
+	margin: 0;
+	border: 0;
+}
+small {
+	font-size: .8em;
+}
+
+
+/*  @group Fonts  */
+h1 a, h2 a, h3 a, h4 a, h5 a {
+    color: white;
+}
+sub, sup {
+	position: relative;
+	font-size: .8em;
+    line-height: 0;
+}
+sub {
+  	bottom: -0.25em;
+}
+sup {
+  	top: -0.5em;
+}
+
+
+/*  @group Block Elements   */
+details summary{
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+details summary:hover{
+    color: #3794FF;
+}
+figure {
+	margin: 0;
+}
+img, picture {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+}
+img {
+	height: auto;
+}
+embed, iframe, img, object, video {
+	max-width: 100%;
+}
+
+
+/*  @group Form Elements   */
+::-webkit-input-placeholder {
+	color: inherit;
+}
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder,
+input::placeholder {
+    opacity: 1;
+	font-style: italic;
+}
+:focus::placeholder {
+	color: transparent;
+}
+::-moz-focus-inner {
+	padding: 0;
+	border-style: none;
+}
+::-moz-ui-invalid {
+	box-shadow: none;
+}
+::-ms-expand {
+	display: none;
+}
+select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	text-transform: none;
+}
+input[type="search"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+::-webkit-file-upload-button {
+	font: inherit;
+	-webkit-appearance: button;
+}
+::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+input:focus, textarea:focus {
+	outline-width: 2px;
+	outline-style: solid;
+	outline-color: Highlight;
+}
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+textarea, select {
+	width: 100%;
+	max-width: 100%;
+	padding: 0.5em;
+	border: 1px solid #BBB;
+	border-radius: 0;
+	font-size: 1em;
+}
+textarea {
+	overflow: auto;
+	-ms-overflow-style: scrollbar;
+	resize: vertical;
+	vertical-align: top;
+	min-height: 5em;
+	max-height: 15em;
+}
+input[type="button"]
+input[type="submit"],
+input[type="reset"],
+button,
+a {
+	-ms-touch-action: manipulation;
+    touch-action: manipulation;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+}
+form {
+	margin: 0;
+	font-size: 1em;
+}
+label {
+	cursor: pointer;
+}
+fieldset {
+	min-width: 0;
+}
+legend {
+	display: table;
+	width: 100%;
+	white-space: normal;
+	padding: 0;
+}
+
+/*  @group Other  */
+.crop-image {
+    max-height: 400px;
+    overflow: hidden;
+}
